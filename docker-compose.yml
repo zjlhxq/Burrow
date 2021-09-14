@@ -1,7 +1,7 @@
 version: "2"
 services:
   burrow:
-    build: .
+    image: ${DOCKER_REPOS:-}burrow
     network_mode: "host"
     volumes:
       - ${PWD}/docker-config:/etc/burrow/
